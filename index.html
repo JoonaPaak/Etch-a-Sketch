@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <div class="grid">
-        <div id="container"></div>
+    <div class="header">Etch A Sketch</div>
+    <div id="container"></div>
+    <div>
+      <div class="slider">
+      <input type="range" id="slider" value="0" name="slider" min="0" max="12" list="tickmarks" onchange="updateTextInput(this.value);">
+      <datalist id="tickmarks">
+        <option value="0" label="16x16"></option>
+        <option value="1" label="20x20"></option>
+        <option value="2" label="24x24"></option>
+        <option value="3" label="28x28"></option>
+        <option value="4" label="32x32"></option>
+        <option value="5" label="36x36"></option>
+        <option value="6" label="40x40"></option>
+        <option value="7" label="44x44"></option>
+        <option value="8" label="48x48"></option>
+        <option value="9" label="52x52"></option>
+        <option value="10" label="56x56"></option>
+        <option value="11" label="60x60"></option>
+        <option value="12" label="64x64"></option>
+      </datalist>
     </div>
   </body>
 </html>
